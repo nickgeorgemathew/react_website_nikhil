@@ -28,19 +28,10 @@ const bgarray=[
 
 ]
 const res=bgarray.map((item,index)=>(
-  <div key={index}><img src={item.img} alt={item.title}/>{item.title}</div>
-
-))
-
-export  const Content_card =() => {
-  return (
-    //container
-    <div className="flex flex-col items-center bg-amber-700 w-screen h-screen p-0 relative text-center  mt-0 ">
-      {/* First card */}
-      <div className="  text-slate-50 flex flex-col  items-center justify-center p-0 w-screen left-0 right-0 bg-slate-950 min-h-screen bg-[url('..\src\OIP.jpg')] bg-cover bg-no-repeat">
+  <div key={index} className="  text-slate-50 flex flex-col  items-center justify-center p-0 w-screen left-0 right-0 bg-slate-950 min-h-screen  bg-cover bg-no-repeat"style={{ backgroundImage: `url(${item.img})` }}>
         {/*  card content */}
         
-      <p>SDFSDFWEFW</p>
+      <p>{item.title}</p>
           {/*button */}
         <div>
           <button>
@@ -54,24 +45,17 @@ export  const Content_card =() => {
         </div>
       </div>
 
-      {/* Second card */}
-      <div className=" flex flex-col items-center justify-center p-0 w-screen left-0 right-0 bg-slate-300 min-h-screen ">
-        {/* card content */}
-        <p>sdfsdfsdfqwqeqweqweqwe</p>
-      {/*button */}
-        <div>
-          <button>
-            ordernow
+))
 
-          </button>
-          <button>
-            demo drive
-            
-          </button>
-        </div>
-        
-      </div>
-      <div>{res}</div>
+export  const Content_card =() => {
+  return (
+    //container
+    <div className="flex flex-col items-center bg-amber-700 w-screen h-screen p-0 relative text-center  mt-0 ">
+      {/* First card */}
+      {res}
+      
+
+     
     </div>
     
     
