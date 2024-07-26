@@ -5,8 +5,8 @@
 function Hnav() {
   return (
    <div>
-     <div className="  flex flex-row border-l-amber-600">
-    <div className=" flex flex-row   w-screen p-0   h-16 justify-between items-center left-0 top-0 right-0  z-10 relative bg-black text-zinc-50 text-center 
+     <div className="  flex flex-row ">
+    <div className=" flex flex-row   w-screen p-0   h-16 justify-between items-center left-0 top-0 right-0  z-10 relative bg-blue-950 text-white text-center 
      " 
     >
       
