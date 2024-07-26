@@ -2,6 +2,7 @@ import image1 from './w.jpg'
 
 import image3 from './ss.jpg'
 import image4 from './wp2.jpg'
+import Footer from './Footer'
 
 
 const bgarray=[
@@ -63,6 +64,12 @@ export  const Content_card =() => {
       {/*  card */}
       {res}
       {/* card */}
+       {/* footer */}
+      <div>
+        <Footer/>
+      </div>
+       {/*  footer */}
+      
       
 
      
