@@ -11,9 +11,11 @@ function Hnav() {
     >
       
       <h1 className=" ml-2  ">NIKHIL</h1>
+    
       <div className="flex flex-row  gap-2 justify-between ">
-        <i >products</i>
-       <i> resume</i>
+        
+        <i className="block h-full hover:bg-white hover:text-black ">products</i>
+       <i className=""> resume</i>
        <i> upcoming</i>
        <i> about</i>
        <i className=" mr-2"> technologies</i>
