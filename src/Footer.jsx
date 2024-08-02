@@ -2,22 +2,24 @@
 
 export default  function Footer() {
   return (
-    <footer className=" bg-blue-950 text-white flex flex-row gap-9 w-screen h-96 relative  p-8 bottom-0 left-0 right-0 justify-center ">
-      <div className="flex flex-col">
-      cxvsdfvswdfs 
-      <i>x</i>
-      <i>instagram</i>
-      <i>facebook</i>
-      <i>discord</i> 
+    <footer className=" bg-blue-950 text-white flex flex-row gap-44 w-screen h-96 relative  p-8 bottom-0 left-0 right-0  items-start ">
+      <div className="flex flex-row gap-x-6 pl-0 left-0 pt-8">
+      
+      <i class="fa-brands fa-youtube "  ></i>
+      <i class="fa-brands fa-linkedin "></i>
+      <i class="fa-brands fa-instagram "></i>
+      
+      <i class="fa-brands fa-discord "></i> 
       </div>
       
        {/*  card */}
-      <div className="right-0">
+      <div className=" flex flex-colright-0 gap-y-10">
         
 
         
-        asasd
+       
         <ul>
+          sdfd
           <li>s</li>
           <li>awd</li>
           <li>dfgdf</li>
@@ -28,9 +30,10 @@ export default  function Footer() {
 
       </div>
        {/*  card */}
-      <div>
-adasdasd
+      <div className=" flex flex-colright-0 gap-y-10">
+
 <ul>
+adasdasd
           <li>s</li>
           <li>awd</li>
           <li>dfgdf</li>
@@ -40,9 +43,10 @@ adasdasd
         </ul>
       </div>
        {/*  card */}
-      <div>
-        asdas
+      <div className=" flex flex-colright-0 gap-y-10">
+        
         <ul>
+          asdas
           <li>s</li>
           <li>awd</li>
           <li>dfgdf</li>
@@ -53,9 +57,10 @@ adasdasd
         
       </div>
        {/*  card */}
-      <div>
-        asdadada
+      <div className=" flex flex-colright-0 gap-y-10">
+        
         <ul>
+        asdadada
           <li>s</li>
           <li>awd</li>
           <li>dfgdf</li>

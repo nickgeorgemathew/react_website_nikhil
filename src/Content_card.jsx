@@ -36,8 +36,8 @@ const res=bgarray.map((item,index)=>(
   <div key={index} className="  text-slate-50 flex flex-col   items-center justify-center p-0 w-screen left-0 right-0 bg-slate-950 min-h-screen  bg-cover bg-no-repeat"style={{ backgroundImage: `url(${item.img})` }}>
         {/*  card content */}
         <div>
-          <p className='block '>{item.title}</p>
-          <p>{item.datas}</p>
+          <p className='block text-slate-950 '>{item.title}</p>
+          <p className='text-slate-950'>{item.datas}</p>
         </div>
         
       
@@ -65,7 +65,7 @@ export  const Content_card =() => {
       {res}
       {/* card */}
        {/* footer */}
-      <div>
+      <div className=' pl-0'>
         <Footer/>
       </div>
        {/*  footer */}
