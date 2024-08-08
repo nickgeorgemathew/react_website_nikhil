@@ -43,13 +43,13 @@ const res=bgarray.map((item,index)=>(
       
           {/*button */}
         <div className=' flex flex-row gap-28 w-full h-2/4 pt-96 items-center justify-center'>
-          <button className=' opacity-100 bg-opacity-0 mt-50 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border-4 border-black border-solid hover:border-transparent rounded h-10
+          <button className=' mob_s:w-fit sm:w-1/6 opacity-100 bg-opacity-0 mt-50 bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border-4 border-black border-solid hover:border-transparent rounded h-10
           w-1/6'>
             ordernow
 
           </button>
-          <button className=' w-1/6 mt-50 bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white-500 hover:border-transparent rounded h-10'>
-            demo drive
+          <button className=' mob_s:w-fit sm:w-1/6 mt-50 bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white-500 hover:border-transparent rounded h-10'>
+            demodrive
             
           </button>
         </div>
