@@ -14,11 +14,11 @@ function Hnav() {
     
       <div className="flex flex-row  gap-2 justify-between cursor-pointer">
         
-        <i className="block h-full hover:underline">products</i>
-       <i className="hover:underline hover">resume</i>
-       <i className="hover:underline"> upcoming</i>
-       <i className="hover:underline"> about</i>
-       <i className="hover:underline mr-2"> technologies</i>
+        <i className="block h-full hover:opacity-60 hover:underline">products</i>
+       <i className="hover:underline hover:opacity-60">resume</i>
+       <i className="hover:underline hover:opacity-60"> upcoming</i>
+       <i className="hover:underline hover:opacity-60"> about</i>
+       <i className="hover:underline hover:opacity-60"> technologies</i>
       </div>
       
        
