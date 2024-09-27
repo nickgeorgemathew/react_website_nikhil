@@ -3,6 +3,8 @@ import image1 from './w.jpg'
 import image3 from './ss.jpg'
 import image4 from './wp2.jpg'
 import Footer from './Footer'
+import Beforedropnav from './Beforedropdown'
+import Hnav from './Hnav'
 
 
 const bgarray=[
@@ -33,7 +35,8 @@ const bgarray=[
 
 ]
 const res=bgarray.map((item,index)=>(
-  <div key={index} className="  text-slate-50 grid grid-cols-1   items-center justify-center p-0 w-screen left-0 right-0 bg-slate-950 min-h-screen  bg-cover bg-no-repeat"style={{ backgroundImage: `url(${item.img})` }}>
+  <div key={index} className=" [grid-template-areas:'stack']  text-slate-50 grid grid-cols-1   items-center justify-center p-0 w-screen left-0 right-0 bg-slate-950 min-h-screen  bg-cover bg-no-repeat"
+  style={{ backgroundImage: `url(${item.img})` }}>
         {/*  card content */}
         <div>
           <p className='block text-slate-950 '>{item.title}</p>
@@ -60,12 +63,17 @@ const res=bgarray.map((item,index)=>(
 export  const Content_card =() => {
   return (
     //container
-    <div className="grid grid-cols-1 items-center w-screen h-screen p-0 text-center  mt-0 ">
+    
+
+    <div className=" grid grid-cols-1 items-center w-screen h-40 p-0 text-center  mt-0 ">
+     
+       <Beforedropnav/>
+      
       {/*  card */}
       {res}
       {/* card */}
        {/* footer */}
-      <div className=' pl-0'>
+      <div className=' w-screen left-0'>
         <Footer/>
       </div>
        {/*  footer */}
