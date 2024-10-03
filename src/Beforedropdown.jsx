@@ -1,4 +1,6 @@
 import { useState,useEffect } from "react";
+import {motion} from 'framer-motion'
+import './App.css'
 import Hnav from './Hnav'
 
 function Beforedropnav(props) {
@@ -61,16 +63,16 @@ function Beforedropnav(props) {
       
      
       
-        <div className= {`transition-transform duration-300 top-0 w-full justify-between align-top py-8 flex flex-row h-24 mr-4  ${show ? 'translate-y-0' : '-translate-y-48'}transition-transform duration-300 
-    fixed bg-black h-48 text-white' 
-    top-0 w-full justify-between align-top py-8 flex flex-row  mr-4  `}
+        <motion.div    initial={{ }} animate={{ height: "12rem",backgroundColor:"black", }} transition={{ease:"easeOut", duration: 3}}  className= {`   flex flex-row  mr-4  ${show ? 'translate-y-0' : '-translate-y-48'}transition-transform duration-300 
+    fixed   text-white  top-0 w-full justify-between align-top py-8 flex flex-row  mr-4  `}
    onMouseLeave={handlehoverleave} >
               <h1  className="ml-4 mr-4 hover:underline hover:opacity-60"
                 >
                 NIKHIL
               </h1>
   
-              <div className=" pr-5  flex flex-row gap-2  cursor-pointer">
+              <motion.div 
+              className=" pr-5  flex flex-row gap-2  cursor-pointer">
                 <i className=" h-8 w-15 hover:opacity-60 hover:underline" onMouseEnter={handlehover} onMouseLeave={handlehoverleave}>products</i>
   
   
@@ -83,8 +85,8 @@ function Beforedropnav(props) {
   
                 <i className=" h-8 w-20 hover:underline hover:opacity-60"onMouseEnter={handlehover} onMouseLeave={handlehoverleave}>technologies</i>
                 
-            </div>
-          </div>}
+            </motion.div>
+          </motion.div>}
           </>
         
     )

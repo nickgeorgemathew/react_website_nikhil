@@ -32,3 +32,9 @@
 .read-the-docs {
   color: #888;
 }
+/* @keyframes dropdown {
+   0%{ transform: translateY(scale(0.25));}
+   50%{transform: translateY(scale(0.5)); }
+   100%{transform: translateY(scale(1));}
+  
+} */

@@ -8,7 +8,20 @@ export default {
     extend: {
       transitionProperty: {
         'height': 'height',
-      },
+      }, 
+      keyframes: {
+        'nav': {
+           '0%': { height:'0' },
+          '50%': { height :'50%' },
+          '70%': { height :'70%' },
+          '100%': { height :'100%' },
+          
+        }
+        ,
+      animation: {
+        'nav': 'nav 10s  ease-in-out',
+        }}
+       
     },
     
       screens: {

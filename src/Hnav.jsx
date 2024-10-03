@@ -93,7 +93,7 @@ const Hnav = (props) => {
 
   return (
    <>
-   <div className= {`fixed transition-transform duration-300 top-0 w-full justify-between align-top py-8 flex flex-row h-24 mr-4  ${show ? 'translate-y-0' : '-translate-y-48'}`}
+   <div className= {` fixed transition-transform duration-300 top-0 w-full justify-between align-top py-8 flex flex-row h-24 mr-4  ${show ? 'translate-y-0' : '-translate-y-48'}`}
    onMouseLeave={handlehoverleave} >
               <h1  className="ml-4 mr-4 hover:underline hover:opacity-60"
                 >
