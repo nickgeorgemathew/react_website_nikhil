@@ -29,7 +29,7 @@ function App() {
    
     
     
-    {/* <Content_card/> */}
+     <Content_card/> 
   
     
     
