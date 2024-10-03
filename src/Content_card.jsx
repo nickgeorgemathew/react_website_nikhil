@@ -67,7 +67,7 @@ export  const Content_card =() => {
 
     <div className=" grid grid-cols-1 items-center w-screen h-40 p-0 text-center  mt-0 ">
      
-       <Beforedropnav/>
+     
       
       {/*  card */}
       {res}
