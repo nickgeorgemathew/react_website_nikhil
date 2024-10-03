@@ -73,7 +73,7 @@ const Hnav = (props) => {
   return (
    
       
-        <div  className=" bg-black   grid grid-flow-col justify-between py-8 px-3 h-20" >
+        <div  className="  bg-black   grid grid-flow-col justify-between py-8 px-3 h-20" >
           
               <h1  className=" hover:underline hover:opacity-60"
                 >

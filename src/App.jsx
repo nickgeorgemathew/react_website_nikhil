@@ -12,37 +12,13 @@ import Beforedropnav from './Beforedropdown.jsx'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [display,setDisplay]=useState(false)
-  const setDisplayup=()=>{
-    setDisplay(!display)
-  
-  }
-  const [ishovered, sethovered] = useState(true);
 
-
- 
- 
-
-  const handlehover = () => {
-    
-    
-    sethovered(!ishovered);
-    
-  };
-  const handlehoverleave = () => {
-    if (ishovered==true){
-      sethovered(!ishovered);
-
-    }
-  }
- 
 
   return (
     <>
    {/* <Beforedropnav ishovered={ishovered} sethovered={sethovered} handlehover={handlehover} handlehoverleave={handlehoverleave}/>
    */}
-   <Beforedropnav ishovered={ishovered} sethovered={sethovered} />
+   <Beforedropnav />
   {/* <div className=" fixed  hover:h-52 h-40 bg-slate-500 grid place-items-center [grid-template-areas:'stack']">
   <div className="h-40 w-full bg-gradient-to-t from-slate-800 to-transparent [grid-area:stack]"></div>
 
@@ -53,7 +29,7 @@ function App() {
    
     
     
-    <Content_card/>
+    {/* <Content_card/> */}
   
     
     
