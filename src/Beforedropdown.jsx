@@ -40,7 +40,7 @@ function Beforedropnav(props) {
                 NIKHIL
               </h1>
   
-              <div className=" pr-3  flex flex-row gap-2  cursor-pointer">
+              <div className=" pr-5  flex flex-row gap-2  cursor-pointer">
                 <i className=" h-8 w-15 hover:opacity-60 hover:underline" onMouseEnter={handlehover} onMouseLeave={handlehoverleave}>products</i>
   
   
