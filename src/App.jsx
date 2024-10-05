@@ -17,9 +17,9 @@ function App() {
   return (
     <>
    {/* <Beforedropnav ishovered={ishovered} sethovered={sethovered} handlehover={handlehover} handlehoverleave={handlehoverleave}/>
-   */}<span className=' transition-all duration-300 ease-in-out'>
+   */}
     <Beforedropnav />
-   </span>
+ 
    
   
   {/* <div className=" fixed  hover:h-52 h-40 bg-slate-500 grid place-items-center [grid-template-areas:'stack']">

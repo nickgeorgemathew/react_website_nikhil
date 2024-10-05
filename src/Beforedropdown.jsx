@@ -2,8 +2,35 @@ import { useState,useEffect } from "react";
 import {motion} from 'framer-motion'
 import './App.css'
 import Hnav from './Hnav'
+import image1 from './w.jpg'
+import image3 from './ss.jpg'
+import image4 from './wp2.jpg'
 
 function Beforedropnav(props) {
+  navarray=[
+    {
+      num:1,
+      title:"one",
+      img:image1,
+      datas:"sdasdasdsadasda"
+    }
+    ,
+    
+  {
+    num:3,
+    title:"two",
+    img:image3,
+    datas:"sdasdasdsadasda"
+  },
+  {
+    num:4,
+    title:"two",
+    img:image4,
+    datas:"sdasdasdsadasda"
+  }
+  
+  
+  ]
 
   const [ishovered,sethovered]=useState(false)
   const [show, setShow] = useState(true);
@@ -53,6 +80,15 @@ function Beforedropnav(props) {
       
       
     };
+    const navdrop_content=navarray.map((item,index)=>(
+      <div key={index} className=" align-middle justify-center w-10 h-10 p-5">
+      {/*  card content */}
+      <div  className="bg"style={{ backgroundImage: `url(${item.img})` }}>
+       <p>{item.datas}</p>
+        </div>
+    </div>
+     )
+    )
     
     
     return (
@@ -63,8 +99,10 @@ function Beforedropnav(props) {
       
      
       
-        <motion.div    initial={{ }} animate={{ height: "12rem",backgroundColor:"black", }} transition={{ease:"easeOut", duration: 3}}  className= {`   flex flex-row  mr-4  ${show ? 'translate-y-0' : '-translate-y-48'}transition-transform duration-300 
-    fixed   text-white  top-0 w-full justify-between align-top py-8 flex flex-row  mr-4  `}
+        <motion.div    initial={{ 
+        height:"-12rem",position:"relative" }} animate={{ height:"12rem",opacity:"1",position:"fixed" }} transition={{ease:"easeOut", duration: 3,}}
+       className= {` bg-black h-48 flex flex-row  mr-4  ${show ? 'translate-y-0' : '-translate-y-48'}transition-transform duration-300 
+     text-white  top-0 w-full justify-between align-top py-8  `}
    onMouseLeave={handlehoverleave} >
               <h1  className="ml-4 mr-4 hover:underline hover:opacity-60"
                 >
@@ -86,6 +124,9 @@ function Beforedropnav(props) {
                 <i className=" h-8 w-20 hover:underline hover:opacity-60"onMouseEnter={handlehover} onMouseLeave={handlehoverleave}>technologies</i>
                 
             </motion.div>
+            <div>
+             {ishovered?{navdrop_content}:null} 
+            </div>
           </motion.div>}
           </>
         
